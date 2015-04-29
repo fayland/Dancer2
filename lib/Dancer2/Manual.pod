@@ -2041,7 +2041,7 @@ from anywhere in an app or only from a route, which means during a request:
 
      register meow => sub {
          debug 'Meow!';
-     }, { is_global => 0 };
+     },UserActions is_global => 0 };
 
 =head3 Route Decorators
 
@@ -2494,13 +2494,6 @@ Logs a message of C<info> level:
 
 See L<Dancer2::Core::Role::Logger> for details on how to configure where log
 messages go.
-
-=head2 load
-
-Loads one or more perl scripts in the current application's namespace.
-Syntactic sugar around Perl's C<require>:
-
-    load 'UserActions.pl', 'AdminActions.pl';
 
 =head2 mime
 
